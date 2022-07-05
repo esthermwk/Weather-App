@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 5 Homework</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form>
+          <input
+            type="text"
+            id="result"
+            placeholder="Enter a city..."
+            autofocus="on"
+          />
+          <input type="submit" value="Search" />
+          <input
+            type="submit"
+            id="current-location-btn"
+            value="Current location"
+          />
+        </form>
+        <div class="row">
+          <div class="col">
+            <h1 id="cityName"></h1>
+            <h2>Last update:</h2>
+            <div class="row">
+              <div class="col"><h3>☁️</h3></div>
+              <div class="col">
+                <h4>
+                  <span id="description"></span> <br /><span class="tempElement"
+                    >0</span
+                  ><span class="temp"
+                    ><a href="#" id="celsius-link">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span
+                  >
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <p>
+              Feels like: <span id="feelsLike"></span>
+              <span class="temp"
+                ><a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a></span
+              >
+              <br />
+              Highs/Lows: <span id="high"></span>/<span id="low"></span
+              ><span class="temp"
+                ><a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a></span
+              >
+              <br />
+              Humidity: <span id="humidity"></span>%
+              <br />
+              Wind: <span id="wind"></span> km/h
+              <br />
+              Rain forecast: Low
+              <br />
+            </p>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-2">
+                19 March
+                <br />
+                <div class="day">Tomorrow</div>
+                <div class="emoji">🌤️</div>
+
+                25/20<span class="temp"
+                  ><a href="#" id="celsius-link">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
+              </div>
+              <div class="col-2">
+                20 March
+                <br />
+                <div class="day">Sunday</div>
+
+                <div class="emoji">🌤️</div>
+
+                19/22<span class="temp"
+                  ><a href="#" id="celsius-link">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
+              </div>
+              <div class="col-2">
+                21 March
+                <br />
+                <div class="day">Monday</div>
+
+                <div class="emoji">☔</div>
+
+                27/21<span class="temp"
+                  ><a href="#" id="celsius-link">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
+              </div>
+              <div class="col-2">
+                22 March
+                <br />
+                <div class="day">Tuesday</div>
+
+                <div class="emoji">☔</div>
+
+                28/23<span class="temp"
+                  ><a href="#" id="celsius-link">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
+              </div>
+              <div class="col-2">
+                23 March
+                <br />
+                <div class="day">Wednesday</div>
+
+                <div class="emoji">☁️</div>
+
+                29/23<span class="temp"
+                  ><a href="#" id="celsius-link">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
+              </div>
+              <div class="col-2">
+                24 March
+                <br />
+                <div class="day">Thursday</div>
+
+                <div class="emoji">☀️</div>
+
+                29/23<span class="temp"
+                  ><a href="#" id="celsius-link">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
