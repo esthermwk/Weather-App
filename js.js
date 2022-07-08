@@ -66,7 +66,7 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector(".tempElement");
-  temperatureElement.innerHTML = 30;
+  temperatureElement.innerHTML = Math.round(celsiusTemp);
 }
 
 let celsiusTemp = null;
