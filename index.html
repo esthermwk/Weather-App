@@ -26,7 +26,7 @@
           <input
             type="text"
             id="result"
-            placeholder="Enter a city..."
+            placeholder="Enter a city"
             autofocus="on"
           />
           <input type="submit" value="Search" />
@@ -64,18 +64,14 @@
             </div>
           </div>
           <div class="col">
-            <p>
+            <p id="otherInfo">
               Feels like: <span id="feelsLike"></span>
               <span class="temp"
-                ><a href="#" id="celsius-link">°C</a> |
-                <a href="#" id="fahrenheit-link">°F</a></span
-              >
-              <br />
-              Highs/Lows: <span id="high"></span>/<span id="low"></span
+                ><span id="celsius-link"></span>°C
+                            <br />
+              Highs | Lows: <span id="high"></span> | <span id="low"></span
               ><span class="temp"
-                ><a href="#" id="celsius-link">°C</a> |
-                <a href="#" id="fahrenheit-link">°F</a></span
-              >
+                ></span>°C
               <br />
               Humidity: <span id="humidity"></span>%
               <br />
@@ -83,28 +79,22 @@
               <br />
             </p>
           </div>
-
-           <div class="container">
+      <div class="container">
             <div class="row">
             <div class="col-2">
-            <div id="weather-forecast"></div>
-            <div class="weather-forecast-day"></div>
-                
-                <div class="icon"><img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon"/></div>
-                25/20<span class="temp"
-                  ><a href="#" id="celsius-link">°C</a> |
-                  <a href="#" id="fahrenheit-link">°F</a></span
-                >
+              <div class="weather-forecast-date" id="weather-forecast">Sat
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon" width="72"/> 
+                <div class="forecast-temp"><span class="max-temp"
+                  >25</span>° | <span class="min-temp">20</span><span id="celsius-link">°</span></div>
+               </div>  
          </div>     
       </div>
     </div>
-    
-    <span id="OpenSourceCode"
-      >Open-source code by
-      <a href="https://github.com/esthermwk/Weather-App" target="_blank"
-        >Esther Mak</a
-      ></span
-    >
+ 
+
+<span id="OpenSourceCode">Open-source code by <a href="https://github.com/esthermwk/Weather-App" target="_blank"
+        > Esther Mak</a></span>
     <script src="js.js"></script>
   </body>
+
 </html>
