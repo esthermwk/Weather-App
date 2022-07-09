@@ -11,7 +11,7 @@ function displayForecast() {
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
-      `        <div class="container">
+      `     <div class="container">
             <div class="row">
             <div class="col-2">
             <div id="weather-forecast"></div>
@@ -22,10 +22,10 @@ function displayForecast() {
                   ><a href="#" id="celsius-link">°C</a> |
                   <a href="#" id="fahrenheit-link">°F</a></span
                 >
-              
+         </div>     
       </div>
     </div>
-    </div>
+    
     `;
   });
 
