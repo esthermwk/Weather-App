@@ -8,7 +8,7 @@ function displayForecast() {
 
   forecastElement.innerHTML = `
   <div class="container">
-            <div class="weather-forecast" id="weather-forecast">
+            <div id="weather-forecast">
               <div class="col-2">
                 30 March
                 <br />
