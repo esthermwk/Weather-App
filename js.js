@@ -7,27 +7,25 @@ function displayForecast() {
   let forecastElement = document.querySelector("#weather-forecast");
 
   let forecastHTML = `<div class="row">`;
-  let days = ["Thu", "Fri", "Sat"];
+  let days = ["Thu", "Fri", "Sat", "Sun"];
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
-      `
-      <div class="container">
-   <div class="col-2">
-            <div id="weather-forecast">
-             
-                <div class="weather-forecast-date">${day}</div>
-                <br />
-            
+      `        <div class="container">
+            <div class="row">
+            <div class="col-2">
+            <div id="weather-forecast"></div>
+            <div class="weather-forecast-day">${day}</div>
+                
                 <div class="icon"><img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon"/></div>
-
                 25/20<span class="temp"
                   ><a href="#" id="celsius-link">°C</a> |
                   <a href="#" id="fahrenheit-link">°F</a></span
                 >
-              </div>
+              
       </div>
-      </div>
+    </div>
+    </div>
     `;
   });
 
