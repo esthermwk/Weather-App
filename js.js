@@ -3,6 +3,27 @@ let now = new Date();
 
 h2.innerHTML = `Last updated: ${now}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+
+  forecastElement.innerHTML = `
+  <div class="container">
+            <div class="weather-forecast" id="weather-forecast">
+              <div class="col-2">
+                30 March
+                <br />
+                <div class="day">Tomorrow</div>
+                <div class="emoji">🌤️</div>
+
+                25/20<span class="temp"
+                  ><a href="#" id="celsius-link">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
+              </div>
+      </div>
+    </div>`;
+}
+
 function displayWeatherCondition(response) {
   console.log(response.data);
   document.querySelector("#cityName").innerHTML = response.data.name;
@@ -81,3 +102,4 @@ let currentLocation = document.querySelector("#current-location-btn");
 currentLocation.addEventListener("click", getCurrentLocation);
 
 searchCity("Hong Kong");
+displayForecast();
