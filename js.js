@@ -6,14 +6,20 @@ h2.innerHTML = `Last updated: ${now}`;
 function displayForecast() {
   let forecastElement = document.querySelector("#weather-forecast");
 
-  forecastElement.innerHTML = `
-  <div class="container">
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="container">
+   <div class="col-2">
             <div id="weather-forecast">
-              <div class="col-2">
-                30 March
+             
+                <div class="weather-forecast-date">${day}</div>
                 <br />
-                <div class="day">Tomorrow</div>
-                <div class="emoji">🌤️</div>
+            
+                <div class="icon"><img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon"/></div>
 
                 25/20<span class="temp"
                   ><a href="#" id="celsius-link">°C</a> |
@@ -21,7 +27,12 @@ function displayForecast() {
                 >
               </div>
       </div>
-    </div>`;
+      </div>
+    `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function displayWeatherCondition(response) {
