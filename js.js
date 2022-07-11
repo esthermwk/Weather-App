@@ -6,35 +6,32 @@ h2.innerHTML = `Last updated: ${now}`;
 function displayForecast() {
   let forecastElement = document.querySelector("#weather-forecast");
 
-  let forecastHTML = `<div class = "row">`;
+  let forecastHTML = `<div class="row">`;
   forecastHTML =
     forecastHTML +
     `
-   <div class="weather-forecast-date">
             <div class="col-2">
-              <div id="weather-forecast">Sat
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon" width="72"/> 
-                <div class="forecast-temp"><span class="max-temp"
-                  >25</span>°|<span class="min-temp">20</span><span id="celsius-link">°</span></div>
-               </div> 
-               </div>
-               </div>
+              Sat
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon" width="72"/> 
+              <div class="forecast-temp">
+                <span class="max-temp">25</span>°|<span class="min-temp">20</span>º 
+              </div>
+            </div>
+
 
     `;
   forecastHTML =
     forecastHTML +
     `
-  <div class="weather-forecast-date">
             <div class="col-2">
-              <div id="weather-forecast">Sat
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon" width="72"/> 
-                <div class="forecast-temp"><span class="max-temp"
-                  >25</span>°|<span class="min-temp">20</span><span id="celsius-link">°</span></div>
-               </div>   
-               </div> 
-               </div>
-              
-    
+              Sat
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon" width="72"/> 
+              <div class="forecast-temp">
+                <span class="max-temp">25</span>°|<span class="min-temp">20</span>º 
+              </div>
+            </div>
+
+
     `;
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
