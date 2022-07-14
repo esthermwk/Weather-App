@@ -13,10 +13,10 @@ function displayForecast() {
       forecastHTML +
       `
             <div class="col-2">
-              ${day}
+             <div class="forecast-date"> ${day}</div>
               <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon" width="72"/> 
               <div class="forecast-temp">
-                <span class="max-temp">25</span>°|<span class="min-temp">20</span>º 
+                <span class="max-temp">25</span>° <span class="min-temp">20</span>° 
               </div>
             </div>
     `;
