@@ -59,7 +59,33 @@ h4 {
 }
 
 #result {
-  box-shadow: 0 0.5rem 1rem rgb(74 77 255 / 10%);
+  background: white;
+  padding: 6px 10px;
+  margin: 0 8px 10px 0;
+  border: none;
+  border-radius: 20px;
+}
+
+#search-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+#search-btn:hover {
+  color: #ffffff;
+  background: #1a936f;
+}
+
+#current-location-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+#current-location-btn:hover {
+  color: #ffffff;
+  background: #1a936f;
 }
 
 #weather-forecast {
