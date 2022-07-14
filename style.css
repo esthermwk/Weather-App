@@ -70,17 +70,21 @@ h4 {
   padding: 6px 10px;
   border: none;
   border-radius: 20px;
+  color: #ffffff;
+  background: #1a936f;
 }
 
 #search-btn:hover {
-  color: #ffffff;
-  background: #1a936f;
+  color: #1a936f;
+  background: #ffffff;
 }
 
 #current-location-btn {
   padding: 6px 10px;
   border: none;
   border-radius: 20px;
+  background: #ffffff;
+  color: #1a936f;
 }
 
 #current-location-btn:hover {
