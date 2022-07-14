@@ -7,28 +7,21 @@ function displayForecast() {
   let forecastElement = document.querySelector("#weather-forecast");
 
   let forecastHTML = `<div class="row">`;
-  forecastHTML =
-    forecastHTML +
-    `
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
             <div class="col-2">
-              Mon
+              ${day}
               <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon" width="72"/> 
               <div class="forecast-temp">
                 <span class="max-temp">25</span>°|<span class="min-temp">20</span>º 
               </div>
             </div>
     `;
-  forecastHTML =
-    forecastHTML +
-    `
-            <div class="col-2">
-              Sat
-              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon" width="72"/> 
-              <div class="forecast-temp">
-                <span class="max-temp">25</span>°|<span class="min-temp">20</span>º 
-              </div>
-            </div>
-    `;
+  });
+
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
