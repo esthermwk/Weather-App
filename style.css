@@ -1,45 +1,50 @@
 h1 {
   color: #114b5f;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 10px 0;
 }
 h2 {
   color: #1a936f;
   font-size: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h3 {
   font-size: 70px;
 }
+#icon {
+  padding: 0px 10px 5px 30px;
+}
 h4 {
   color: #114b5f;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
+  padding: 15px 10px 5px 0px;
 }
 #otherInfo {
-  padding: 40px 0 0;
+  padding: 90px 50px 5px 50px;
   color: #1a936f;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .col-2 {
   color: #1a936f;
   font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
 .container {
   color: #1a936f;
 }
 .temp {
-  font-size: 5px;
+  font-size: 15px;
   font-weight: lighter;
   position: relative;
-  top: -5px;
+  top: -7px;
 }
+
 #celsius-link {
   text-decoration: none;
   color: #114b5f;
